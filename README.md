@@ -15,19 +15,19 @@ This framework provides tools for analyzing wave propagation in periodic elastic
 ## Files
 
 Class files:
-- base_problem.py # Base class for all problems
-- forward_solver.py # Forward solver (ω(k))
-- inverse_solver.py # Inverse solver (k(ω))
-- mesh_generator.py # Mesh creation from STEP files
-- material_assigner.py # Material assignment
-- periodic_bc.py # Periodic boundary conditions
-- plotter.py # Plotting utilities
+- base_problem.py : Base class for all problems
+- forward_solver.py : Forward solver (ω(k))
+- inverse_solver.py : Inverse solver (k(ω))
+- mesh_generator.py : Mesh creation from STEP files
+- material_assigner.py : Material assignment
+- periodic_bc.py : Periodic boundary conditions
+- plotter.py : Plotting utilities
 
 Runs:
-- run_forward.py # Run forward problem
-- run_inverse.py # Run inverse problem
-- plot_forward.py # Plot forward results
-- plot_inverse.py # Plot inverse results
+- run_forward.py : Run forward problem
+- run_inverse.py : Run inverse problem
+- plot_forward.py : Plot forward results
+- plot_inverse.py : Plot inverse results
 
 ## Usage
 
