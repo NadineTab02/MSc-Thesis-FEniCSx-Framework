@@ -157,7 +157,6 @@ class MeshGenerator:
         print(f"  Number of cells: {mesh.topology.index_map(mesh.topology.dim).size_local}")
         print(f"  Periodic direction: {periodic_direction.upper()}")
         print(f"  Periodic length L_f = {self.L_periodic:.6f} m")
-        print(f"  {coord_name} range: [{coord_array.min():.6f}, {coord_array.max():.6f}] m")
         print(f"  X range: [{x_coords.min():.6f}, {x_coords.max():.6f}] m")
         print(f"  Y range: [{y_coords.min():.6f}, {y_coords.max():.6f}] m")
         print(f"  Z range: [{z_coords.min():.6f}, {z_coords.max():.6f}] m")
