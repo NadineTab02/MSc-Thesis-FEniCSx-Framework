@@ -117,9 +117,9 @@ class ForwardSolver(BaseProblem):
         for idx, k in enumerate(k_values):
             k_start = time.time() 
             print(f"\n  k = {k:.6f} 1/m  ({idx+1}/{len(k_values)})")
-            print(f"    Phase factor = exp(i*k*L) = {np.exp(1j * k * L_f):.4f}")
+            print(f"    Phase factor = exp(-i*k*L) = {np.exp(-1j * k * L_f):.4f}")
             
-            phase = np.exp(1j * k * L_f)
+            phase = np.exp(-1j * k * L_f)
             mpc = pbc.create_mpc(V, phase=phase)
             
             print("    Assembling matrices...")
