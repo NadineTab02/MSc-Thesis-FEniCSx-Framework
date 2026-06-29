@@ -208,9 +208,9 @@ class InverseSolver(BaseProblem):
                 vr = A0.createVecRight()
                 Lambda = pep.getEigenpair(i, vr)             
             
-                k_real = Lambda.imag
-                k_imag = -Lambda.real
-                k_complex = -Lambda * 1j
+                k_real = -Lambda.imag
+                k_imag = Lambda.real
+                k_complex = Lambda * 1j
                 k_real_list.append(k_real)
                 k_imag_list.append(k_imag)
                 
